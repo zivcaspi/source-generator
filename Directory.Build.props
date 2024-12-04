@@ -1,0 +1,10 @@
+<Project>
+  <PropertyGroup>
+    <OutDir>$(MSBuildThisFileDirectory)\bin\$(Configuration)\$(MSBuildProjectName)\</OutDir>
+    <IntermediateOutputPath>$(MSBuildThisFileDirectory)\obj\$(Configuration)\$(MSBuildProjectName)\</IntermediateOutputPath>
+    <MSBuildProjectExtensionsPath>$(MSBuildThisFileDirectory)\obj\$(Configuration)\$(MSBuildProjectName)\</MSBuildProjectExtensionsPath>
+    
+    <!-- TODO: Remove -->
+    <MSBuildDebug>true</MSBuildDebug>
+  </PropertyGroup>
+</Project>
