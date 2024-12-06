@@ -5,7 +5,19 @@ using Microsoft.CodeAnalysis;
 
 namespace generator
 {
-
+    /// <summary>
+    /// Trivial incremental source generator to test how source generation could be done.
+    /// This particular generator looks for files added to the AdditionalFiles ItemGroup
+    /// of the project that references this generator assembly, and adds the contents of
+    /// each such file as a ConstStrings.NAME constant value.
+    /// </summary>
+    /// <remarks>
+    /// See the following links on how to create incremental source generators:
+    /// <list type="bullet">
+    /// <item>https://github.com/dotnet/roslyn/blob/main/docs/features/incremental-generators.md</item>
+    /// <item>https://github.com/dotnet/roslyn/blob/main/docs/features/incremental-generators.cookbook.md</item>
+    /// </list>
+    /// </remarks>
     [Generator]
     public class Generator : IIncrementalGenerator
     {

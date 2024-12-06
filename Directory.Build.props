@@ -3,6 +3,9 @@
     <OutDir>$(MSBuildThisFileDirectory)\bin\$(Configuration)\$(MSBuildProjectName)\</OutDir>
     <IntermediateOutputPath>$(MSBuildThisFileDirectory)\obj\$(Configuration)\$(MSBuildProjectName)\</IntermediateOutputPath>
     <MSBuildProjectExtensionsPath>$(MSBuildThisFileDirectory)\obj\$(Configuration)\$(MSBuildProjectName)\</MSBuildProjectExtensionsPath>
+
+    <LangVersion>10.0</LangVersion>
+    <ImplicitUsings>enable</ImplicitUsings>
     
     <!-- TODO: Remove -->
     <MSBuildDebug>true</MSBuildDebug>
